@@ -1,3 +1,4 @@
+# LocalStack configuration: https://docs.localstack.cloud/references/configuration/
 services:
   # Localstack service
   # Url: http://localhost:4566/_localstack/health
@@ -11,10 +12,8 @@ services:
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_REGION=${AWS_DEFAULT_REGION}
-      # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
       - DEBUG=${DEBUG:-0}
-      # - SERVICES=lambda,dynamodb
-      - DATA_DIR=/var/lib/localstack/data
+      - PERSISTENCE=1
     volumes:
       - '${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'
