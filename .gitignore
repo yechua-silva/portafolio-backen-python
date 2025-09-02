@@ -33,5 +33,6 @@ Thumbs.db
 # Variables de entorno
 .env
 
-# Volumenes de Docker
+# Directorios para uso local
 /volume
+.serverless
