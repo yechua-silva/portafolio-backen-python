@@ -1,0 +1,11 @@
+# --- PLANTILLA DE COMMIT ---
+
+# 1. Reemplaza TAREA-ID con la clave de Jira.
+
+# 2. Elige un tipo: feat, fix, chore, docs, etc.
+
+# 3. Escribe un resumen claro.
+
+#
+
+TAREA-ID tipo: [Resumen del commit]

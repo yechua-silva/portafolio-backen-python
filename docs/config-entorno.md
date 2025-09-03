@@ -41,7 +41,7 @@ $ aws configure --profile [nombe-perfil]
 - El nombre del perfil puede ser ficticio
   **Esto se hace para hacer crear un perfil**
 
-### EROR: Unable to locate credentials.
+### ERROR: Unable to locate credentials.
 
 Si se sigue recibiendo el mensaje:
 
@@ -59,4 +59,24 @@ AWS Access Key ID [None]: test
 AWS Secret Access Key [None]: test
 Default region name [None]: us-east-1
 Default output format [None]: json
+```
+
+## Ejecutar serverlees
+
+Instalacion de serverless de manera global
+
+```sh
+$ npm -g serverless
+```
+
+Instalacion del plugin con para que funcione con localstack
+
+```sh
+$ npm install -D serverless-localstack
+```
+
+### Levantar servicios en local
+
+```sh
+$ serverless deploy --stage local
 ```
